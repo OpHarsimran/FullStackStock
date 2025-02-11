@@ -15,7 +15,7 @@ const port = process.env.PORT || 3002;
 const mongoose = require('mongoose');
 const url = process.env.MONGO_URL;
 
-app.use(cors());
+app.use(cors({ origin: "*" })); 
 app.use(bodyParser.json());
 
 //dummy data from initData
