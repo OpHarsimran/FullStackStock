@@ -1,10 +1,28 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+  const [username, setUsername] = useState("");
+
+  useEffect(() => {
+   
+    const getCookie = (name) => {
+      const cookies = document.cookie.split("; ");
+      for (let cookie of cookies) {
+          const [key, value] = cookie.split("=").map(c => c.trim());
+          if (key === name) return decodeURIComponent(value); // Decode in case of special characters
+      }
+      return null;
+    };
+    
+  
+  const username = getCookie("username");
+  setUsername(username)
+  
+  }, []);
 
   const handleMenuClick = (index) => {
     setSelectedMenu(index);
@@ -92,7 +110,7 @@ const Menu = () => {
         <hr />
         <div className="profile" onClick={handleProfileClick}>
           <div className="avatar">ZU</div>
-          <p className="username">USERID</p>
+          <p className="username"> {username || "User"}</p>
         </div>
       </div>
     </div>

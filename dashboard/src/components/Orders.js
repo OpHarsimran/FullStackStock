@@ -26,6 +26,7 @@ const Orders = () => {
             <th>Name</th>
             <th>Qty.</th>
             <th>Price.</th>            
+            <th>Mode.</th>            
           </tr>
 
           {orders.map((stock, index) => {
@@ -36,6 +37,7 @@ const Orders = () => {
                 <td>{stock.name}</td>
                 <td>{stock.qty}</td>
                 <td>{stock.price.toFixed(2)}</td>                
+                <td>{stock.mode}</td>
               </tr>
             );
           })}
