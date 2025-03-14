@@ -23,9 +23,10 @@ const crypto = require("crypto");
 
 
 app.use(cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"], // Allow specific domains
-    credentials: true // Allow cookies, sessions, or authentication headers
+    origin: ["http://localhost:3000", "http://localhost:3001", "https://your-frontend-domain.com"],
+    credentials: true  // Allow cookies and authentication headers
 }));
+
 
 
   
@@ -125,7 +126,7 @@ app.post('/login',async (req,res)=>{
                 httpOnly: false, 
                 secure: false, 
                 sameSite: "Lax", 
-                domain: "localhost", 
+                domain: req.hostname.includes("localhost") ? "localhost" : "fullstackstockbackend.onrender.com", 
                 path: '/'
             });
 

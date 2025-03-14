@@ -3,12 +3,14 @@ import axios from "axios";
 import { VerticalGraph } from "./VerticalGraph";
 
 // import { holdings } from "../data/data";
+import server from "../environment.js";
+
 
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings").then((res) => {
+    axios.get(`${server}/allHoldings`).then((res) => {
       console.log(res.data);
       setAllHoldings(res.data);
     });

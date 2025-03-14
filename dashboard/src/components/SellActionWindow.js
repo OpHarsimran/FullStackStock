@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import GeneralContext from "./GeneralContext";
 // import "./SellActionWindow.css";
+import server from "../environment.js";
+
 
 const SellActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
@@ -11,7 +13,7 @@ const SellActionWindow = ({ uid }) => {
   const generalContext = useContext(GeneralContext);
 
   const handleSellClick = async () => {
-      await axios.post("http://localhost:3002/newOrder", {
+      await axios.post(`${server}/newOrder`, {
         name: uid,
         qty: stockQuantity,
         price: stockPrice,
