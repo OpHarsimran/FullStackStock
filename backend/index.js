@@ -23,9 +23,15 @@ const crypto = require("crypto");
 
 
 app.use(cors({
-    origin: ["http://localhost:3000", "http://localhost:3001", "https://your-frontend-domain.com"],
-    credentials: true  // Allow cookies and authentication headers
+    origin: [
+        "http://localhost:3000", 
+        "http://localhost:3001", 
+        "https://fullstackstockfrontend.onrender.com", 
+        "https://fullstackstockdashboard.onrender.com"
+    ],
+    credentials: true
 }));
+
 
 
 
