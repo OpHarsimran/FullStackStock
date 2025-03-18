@@ -132,9 +132,9 @@ app.post('/login',async (req,res)=>{
                 httpOnly: true, 
                 secure: true, 
                 sameSite: "None", 
-                domain: req.hostname.includes("localhost") ? "localhost" : "fullstackstockbackend.onrender.com", 
+                domain: req.hostname.includes("localhost") ? "localhost" : ".onrender.com", 
                 path: '/',
-                expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
+                maxAge: 24 * 60 * 60 * 1000
             });
 
             return res.status(200).json({message:"Logged in successfully",token});
