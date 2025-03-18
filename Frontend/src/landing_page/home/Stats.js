@@ -18,8 +18,8 @@ function Stats() {
             <div className="col-lg-6 col-sm-12 p-5">
                 <img src="Media/images/ecosystem.png" style={{width:"90%"}}></img>
                 <div className="d-flex justify-content-between p-3 mx-5">
-                    <a href='http://localhost:3001/' style={{textDecoration:"none"}}>Explore Our Products <i className="fa-solid fa-arrow-right-long"></i></a>
-                    <a href='http://localhost:3001/' style={{textDecoration:"none"}}>Learn More <i className="fa-solid fa-arrow-right-long"></i></a>
+                    <a href='https://fullstackstockdashboard.onrender.com' style={{textDecoration:"none"}}>Explore Our Products <i className="fa-solid fa-arrow-right-long"></i></a>
+                    <a href='https://fullstackstockdashboard.onrender.com' style={{textDecoration:"none"}}>Learn More <i className="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
 
