@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {HashRouter, Routes, Route} from 'react-router-dom';
 import './index.css';
 import HomePage from './landing_page/home/HomePage';
 import Authentication from './landing_page/signup/Authentication';
@@ -16,7 +16,7 @@ import { AuthProvider } from './landing_page/signup/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <HashRouter>
   <Navbar />
   <AuthProvider>
   <Routes>
@@ -26,11 +26,11 @@ root.render(
   <Route path="/product" element={<ProductPage/>}/>
   <Route path="/pricing" element={<PricingPage/>}/>
   <Route path="/support" element={<SupportPage/>}/>
-  <Route path="*" element={<Authentication/>}/>
+  <Route path="*" element={<NotFound/>}/>
   </Routes>
   </AuthProvider>
   <Footer />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 
