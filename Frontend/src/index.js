@@ -17,17 +17,16 @@ import { AuthProvider } from './landing_page/signup/AuthContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <Navbar />
-    <AuthProvider>
+  <Navbar />
+  <AuthProvider>
   <Routes>
   <Route path="/" element={<HomePage/>}/>
   <Route path="/signup" element={<Authentication/>}/>
-
   <Route path="/about" element={<AboutPage/>}/>
   <Route path="/product" element={<ProductPage/>}/>
   <Route path="/pricing" element={<PricingPage/>}/>
   <Route path="/support" element={<SupportPage/>}/>
-  <Route path="*" element={<NotFound/>}/>
+  <Route path="*" element={<Authentication/>}/>
   </Routes>
   </AuthProvider>
   <Footer />

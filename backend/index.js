@@ -29,7 +29,7 @@ app.use(cors({
         "https://fullstackstockfrontend.onrender.com", 
         "https://fullstackstockdashboard.onrender.com"
     ],
-    credentials: true
+    credentials: true   
 }));
 
 

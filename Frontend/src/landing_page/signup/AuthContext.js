@@ -47,7 +47,6 @@ export const AuthProvider = ({ children }) => {
                 { withCredentials: true } // Ensures cookies are stored
             );
     
-            console.log("Username:", username, "Password:", password);
             console.log("Login Response:", request.data);
     
             if (request.status === 200) {
