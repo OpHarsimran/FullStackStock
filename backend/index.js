@@ -129,11 +129,12 @@ app.post('/login',async (req,res)=>{
             let token = crypto.randomBytes(20).toString("hex");
               
             res.cookie("username", username, {
-                httpOnly: false, 
-                secure: false, 
-                sameSite: "Lax", 
+                httpOnly: true, 
+                secure: true, 
+                sameSite: "None", 
                 domain: req.hostname.includes("localhost") ? "localhost" : "fullstackstockbackend.onrender.com", 
-                path: '/'
+                path: '/',
+                expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
             });
 
             return res.status(200).json({message:"Logged in successfully",token});
