@@ -18,7 +18,8 @@ const Summary = () => {
     
   
   const username = getCookie("username");
-  setUsername(username)
+  setUsername(username);
+  console.log(username);
   
   }, []);
 

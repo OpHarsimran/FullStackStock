@@ -14,11 +14,7 @@ const Apps = () => {
       <a href="https://wanderlust-idj7.onrender.com" target="_blank" className="flex w-full relative justify-center sm:justify-start">
       <div className="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
           <span className="flex group-hover:-top-14 ease-jump duration-200 bg-[#fe424d] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 text-white">Airbnb<i className="px-1 text-white fa-solid fa-right-to-bracket"></i></span>
-          <img
-          className="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-          src="./images/Group 1.png"
-          alt=""
-          />
+          
 
         </div>
     </a>
@@ -106,11 +102,7 @@ const Apps = () => {
       <a href="https://thefourplanets.netlify.app/" target="_blank" className="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
         <div className="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
             <span className="flex group-hover:-top-14 ease-jump duration-200 text-white bg-[#536294] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">The Planets<i className="px-1 fa-solid fa-right-to-bracket"></i></span>
-        <img
-        className="max-w-[400px] relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-        src="./images/Planets.png"
-        alt=""
-      />
+       
         </div>
       </a>
     </div>
@@ -123,11 +115,7 @@ const Apps = () => {
       <a href="https://spotifyharsimran.netlify.app/" target="_blank" className="flex w-full relative justify-center sm:justify-start">
       <div className="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
           <span className="flex group-hover:-top-14 ease-jump duration-200 bg-[#1d506b] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 text-white">Spotify<i className="px-1 text-white fa-solid fa-right-to-bracket"></i></span>
-          <img
-          className="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-          src="./images/spotifyImg.png"
-          alt=""
-          />
+         
         </div>
     </a>
       <div className="w-full">
@@ -205,11 +193,7 @@ const Apps = () => {
       <a href="https://weather-app-harsimran.netlify.app/" target="_blank" className="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
         <div className="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto">
             <span className="flex group-hover:-top-14 ease-jump duration-200 text-[#F2F2F2] bg-[#1976d2] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">WeatherWise<i className="px-1 fa-solid fa-right-to-bracket"></i></span>
-        <img
-        className="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
-        src="images/weatherIcon.png"
-        alt=""
-      />
+        
         </div>
       </a>
     </div>
